@@ -1,0 +1,1 @@
+gfortran -fPIC  -g -Wall -Wextra -fimplicit-none -fbacktrace -shared -Wl,-soname,libcallpy.so -o libcallpy.so CMakeFiles/callpy.dir/callpy_mod.f90.o CMakeFiles/callpy.dir/plugin.c.o  -Wl,-rpath,/global/homes/z/zhangtao/cfs_m2136/backup/soft/miniconda3/lib: /global/homes/z/zhangtao/cfs_m2136/backup/soft/miniconda3/lib/libpython3.8.so -lmvec 

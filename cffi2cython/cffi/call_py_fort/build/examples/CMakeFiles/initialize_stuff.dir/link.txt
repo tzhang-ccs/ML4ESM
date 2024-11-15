@@ -1,0 +1,1 @@
+gfortran  -g -Wall -Wextra -fimplicit-none -fbacktrace CMakeFiles/initialize_stuff.dir/initialize_stuff.f90.o -o initialize_stuff  -Wl,-rpath,/global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/src:/global/homes/z/zhangtao/cfs_m2136/backup/soft/miniconda3/lib ../src/libcallpy.so /global/homes/z/zhangtao/cfs_m2136/backup/soft/miniconda3/lib/libpython3.8.so 

@@ -1,0 +1,877 @@
+The system is: Linux - 5.14.21-150400.24.81_12.0.87-cray_shasta_c - x86_64
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /opt/cray/pe/craype/2.7.30/bin/ftn 
+Build flags: 
+Id flags: -v 
+
+The output was:
+0
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+Driving: gfortran-12 -march=x86-64 -D__CRAY_X86_64 -D__CRAYXT_COMPUTE_LINUX_TARGET -D__TARGET_LINUX__ -v CMakeFortranCompilerId.F -Wl,-Bdynamic -I/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I/opt/cray/pe/dsmml/0.2.2/dsmml//include -L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib -L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -Wl,--as-needed,-lsci_gnu_123_mpi,--no-as-needed -Wl,--as-needed,-lsci_gnu_123,--no-as-needed -ldl -Wl,--as-needed,-lmpifort_gnu_123,--no-as-needed -Wl,--as-needed,-lmpi_gnu_123,--no-as-needed -Wl,--as-needed,-ldsmml,--no-as-needed -Wl,--as-needed,-lgfortran,-lquadmath,--no-as-needed -Wl,--as-needed,-lpthread,--no-as-needed -Wl,--disable-new-dtags -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=gfortran-12
+COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-suse-linux
+Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go,d --enable-offload-targets=nvptx-none, --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.3.0 (SUSE Linux) 
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'a-'
+ /usr/lib64/gcc/x86_64-suse-linux/12/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/tmp/ccpRMqV3.f90 -quiet -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -D __CRAY_X86_64 -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ CMakeFortranCompilerId.F -quiet -dumpdir a- -dumpbase CMakeFortranCompilerId.F -dumpbase-ext .F -march=x86-64 -version -fintrinsic-modules-path /usr/lib64/gcc/x86_64-suse-linux/12/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/cc6J6bz4.s
+GNU Fortran (SUSE Linux) version 12.3.0 (x86_64-suse-linux)
+	compiled by GNU C version 12.3.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include
+ /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include
+ /opt/cray/pe/dsmml/0.2.2/dsmml//include
+ /usr/lib64/gcc/x86_64-suse-linux/12/finclude
+ /usr/lib64/gcc/x86_64-suse-linux/12/include
+ /usr/local/include
+ /usr/lib64/gcc/x86_64-suse-linux/12/include-fixed
+ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include
+ /usr/include
+End of search list.
+GNU Fortran2008 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)
+	compiled by GNU C version 12.3.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'a-'
+ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/as -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include --64 -o /tmp/ccMlHnB6.o /tmp/cc6J6bz4.s
+GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46
+Reading specs from /usr/lib64/gcc/x86_64-suse-linux/12/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'a-'
+COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
+LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'a.'
+ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cck6KHS6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib -L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. /tmp/ccMlHnB6.o -Bdynamic --as-needed -lsci_gnu_123_mpi --no-as-needed --as-needed -lsci_gnu_123 --no-as-needed -ldl --as-needed -lmpifort_gnu_123 --no-as-needed --as-needed -lmpi_gnu_123 --no-as-needed --as-needed -ldsmml --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'a.'
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/3.20.4/CompilerIdFortran/a.out"
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2e255/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2e255.dir/build.make CMakeFiles/cmTC_2e255.dir/build
+gmake[1]: Entering directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o
+/opt/cray/pe/craype/2.7.30/bin/ftn   -v -c /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+Using built-in specs.
+COLLECT_GCC=gfortran-12
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-suse-linux
+Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go,d --enable-offload-targets=nvptx-none, --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.3.0 (SUSE Linux) 
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_2e255.dir/'
+ /usr/lib64/gcc/x86_64-suse-linux/12/f951 /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/tmp/cctozs2e.f90 -quiet -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -D __CRAY_X86_64 -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -quiet -dumpdir CMakeFiles/cmTC_2e255.dir/ -dumpbase CMakeFortranCompilerABI.F.F -dumpbase-ext .F -march=x86-64 -version -fintrinsic-modules-path /usr/lib64/gcc/x86_64-suse-linux/12/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccmkI1di.s
+GNU Fortran (SUSE Linux) version 12.3.0 (x86_64-suse-linux)
+	compiled by GNU C version 12.3.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include
+ /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include
+ /opt/cray/pe/dsmml/0.2.2/dsmml//include
+ /usr/lib64/gcc/x86_64-suse-linux/12/finclude
+ /usr/lib64/gcc/x86_64-suse-linux/12/include
+ /usr/local/include
+ /usr/lib64/gcc/x86_64-suse-linux/12/include-fixed
+ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include
+ /usr/include
+End of search list.
+GNU Fortran2008 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)
+	compiled by GNU C version 12.3.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_2e255.dir/'
+ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/as -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include --64 -o CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o /tmp/ccmkI1di.s
+GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46
+COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
+LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.'
+Linking Fortran executable cmTC_2e255
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e255.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.30/bin/ftn  -v CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o -o cmTC_2e255 
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+Driving: gfortran-12 -march=x86-64 -D__CRAY_X86_64 -D__CRAYXT_COMPUTE_LINUX_TARGET -D__TARGET_LINUX__ -v CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o -o cmTC_2e255 -Wl,-Bdynamic -I/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I/opt/cray/pe/dsmml/0.2.2/dsmml//include -L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib -L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -Wl,--as-needed,-lsci_gnu_123_mpi,--no-as-needed -Wl,--as-needed,-lsci_gnu_123,--no-as-needed -ldl -Wl,--as-needed,-lmpifort_gnu_123,--no-as-needed -Wl,--as-needed,-lmpi_gnu_123,--no-as-needed -Wl,--as-needed,-ldsmml,--no-as-needed -Wl,--as-needed,-lgfortran,-lquadmath,--no-as-needed -Wl,--as-needed,-lpthread,--no-as-needed -Wl,--disable-new-dtags -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=gfortran-12
+COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-suse-linux
+Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go,d --enable-offload-targets=nvptx-none, --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.3.0 (SUSE Linux) 
+Reading specs from /usr/lib64/gcc/x86_64-suse-linux/12/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_2e255' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'cmTC_2e255-'
+COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
+LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_2e255' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'cmTC_2e255.'
+ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccixWKw0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2e255 /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib -L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o -Bdynamic --as-needed -lsci_gnu_123_mpi --no-as-needed --as-needed -lsci_gnu_123 --no-as-needed -ldl --as-needed -lmpifort_gnu_123 --no-as-needed --as-needed -lmpi_gnu_123 --no-as-needed --as-needed -ldsmml --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_2e255' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'cmTC_2e255.'
+gmake[1]: Leaving directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed Fortran implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include]
+    add: [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include]
+    add: [/opt/cray/pe/dsmml/0.2.2/dsmml//include]
+    add: [/usr/lib64/gcc/x86_64-suse-linux/12/finclude]
+    add: [/usr/lib64/gcc/x86_64-suse-linux/12/include]
+    add: [/usr/local/include]
+    add: [/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed]
+    add: [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include] ==> [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include]
+  collapse include dir [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include] ==> [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include]
+  collapse include dir [/opt/cray/pe/dsmml/0.2.2/dsmml//include] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/include]
+  collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/12/finclude] ==> [/usr/lib64/gcc/x86_64-suse-linux/12/finclude]
+  collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/12/include] ==> [/usr/lib64/gcc/x86_64-suse-linux/12/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed] ==> [/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed]
+  collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include] ==> [/usr/x86_64-suse-linux/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include;/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/usr/lib64/gcc/x86_64-suse-linux/12/finclude;/usr/lib64/gcc/x86_64-suse-linux/12/include;/usr/local/include;/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed;/usr/x86_64-suse-linux/include;/usr/include]
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2e255/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2e255.dir/build.make CMakeFiles/cmTC_2e255.dir/build]
+  ignore line: [gmake[1]: Entering directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building Fortran object CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [/opt/cray/pe/craype/2.7.30/bin/ftn   -v -c /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+  ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gfortran-12]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go d --enable-offload-targets=nvptx-none  --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.3.0 (SUSE Linux) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_2e255.dir/']
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/f951 /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/tmp/cctozs2e.f90 -quiet -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -D __CRAY_X86_64 -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /usr/share/cmake/Modules/CMakeFortranCompilerABI.F -quiet -dumpdir CMakeFiles/cmTC_2e255.dir/ -dumpbase CMakeFortranCompilerABI.F.F -dumpbase-ext .F -march=x86-64 -version -fintrinsic-modules-path /usr/lib64/gcc/x86_64-suse-linux/12/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccmkI1di.s]
+  ignore line: [GNU Fortran (SUSE Linux) version 12.3.0 (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.1.2  MPFR version 4.0.2-p6  MPC version 1.1.0  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include]
+  ignore line: [ /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include]
+  ignore line: [ /opt/cray/pe/dsmml/0.2.2/dsmml//include]
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/finclude]
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/include-fixed]
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU Fortran2008 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.1.2  MPFR version 4.0.2-p6  MPC version 1.1.0  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_2e255.dir/']
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/as -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include --64 -o CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o /tmp/ccmkI1di.s]
+  ignore line: [GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils]
+  ignore line: [ SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46]
+  ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-c' '-o' 'CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.']
+  ignore line: [Linking Fortran executable cmTC_2e255]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e255.dir/link.txt --verbose=1]
+  ignore line: [/opt/cray/pe/craype/2.7.30/bin/ftn  -v CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o -o cmTC_2e255 ]
+  ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+  ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+  ignore line: [Driving: gfortran-12 -march=x86-64 -D__CRAY_X86_64 -D__CRAYXT_COMPUTE_LINUX_TARGET -D__TARGET_LINUX__ -v CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o -o cmTC_2e255 -Wl,-Bdynamic -I/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I/opt/cray/pe/dsmml/0.2.2/dsmml//include -L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib -L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -Wl,--as-needed,-lsci_gnu_123_mpi,--no-as-needed -Wl,--as-needed,-lsci_gnu_123,--no-as-needed -ldl -Wl,--as-needed,-lmpifort_gnu_123,--no-as-needed -Wl,--as-needed,-lmpi_gnu_123,--no-as-needed -Wl,--as-needed,-ldsmml,--no-as-needed -Wl,--as-needed,-lgfortran,-lquadmath,--no-as-needed -Wl,--as-needed,-lpthread,--no-as-needed -Wl,--disable-new-dtags -l gfortran -l m -shared-libgcc]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gfortran-12]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go d --enable-offload-targets=nvptx-none  --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.3.0 (SUSE Linux) ]
+  ignore line: [Reading specs from /usr/lib64/gcc/x86_64-suse-linux/12/libgfortran.spec]
+  ignore line: [rename spec lib to liborig]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_2e255' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'cmTC_2e255-']
+  ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_2e255' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'cmTC_2e255.']
+  link line: [ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccixWKw0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2e255 /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib -L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o -Bdynamic --as-needed -lsci_gnu_123_mpi --no-as-needed --as-needed -lsci_gnu_123 --no-as-needed -ldl --as-needed -lmpifort_gnu_123 --no-as-needed --as-needed -lmpi_gnu_123 --no-as-needed --as-needed -ldsmml --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccixWKw0.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lquadmath] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_2e255] ==> ignore
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o]
+    arg [-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib] ==> dir [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib]
+    arg [-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib] ==> dir [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib]
+    arg [-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../..] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../..]
+    arg [CMakeFiles/cmTC_2e255.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_123_mpi] ==> lib [sci_gnu_123_mpi]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_123] ==> lib [sci_gnu_123]
+    arg [--no-as-needed] ==> ignore
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lmpifort_gnu_123] ==> lib [mpifort_gnu_123]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmpi_gnu_123] ==> lib [mpi_gnu_123]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-ldsmml] ==> lib [dsmml]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--no-as-needed] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/crtend.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/crtend.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o]
+  collapse obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib] ==> [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib]
+  collapse library dir [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib] ==> [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib]
+  collapse library dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/lib]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12] ==> [/usr/lib64/gcc/x86_64-suse-linux/12]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib] ==> [/usr/x86_64-suse-linux/lib]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../..] ==> [/usr/lib64]
+  implicit libs: [sci_gnu_123_mpi;sci_gnu_123;dl;mpifort_gnu_123;mpi_gnu_123;dsmml;gfortran;quadmath;pthread;gfortran;m;gcc_s;gcc;quadmath;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o;/usr/lib64/gcc/x86_64-suse-linux/12/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib;/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib;/opt/cray/pe/dsmml/0.2.2/dsmml/lib;/usr/lib64/gcc/x86_64-suse-linux/12;/usr/lib64;/lib64;/usr/x86_64-suse-linux/lib]
+  implicit fwks: []
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_532eb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_532eb.dir/build.make CMakeFiles/cmTC_532eb.dir/build
+gmake[1]: Entering directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_532eb.dir/testFortranCompilerF90.f90.o
+/opt/cray/pe/craype/2.7.30/bin/ftn    -c /global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTC_532eb.dir/testFortranCompilerF90.f90.o
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+Linking Fortran executable cmTC_532eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_532eb.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.30/bin/ftn CMakeFiles/cmTC_532eb.dir/testFortranCompilerF90.f90.o -o cmTC_532eb 
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+gmake[1]: Leaving directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp'
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/cray/pe/craype/2.7.30/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/3.20.4/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/cray/pe/craype/2.7.30/bin/CC 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/3.20.4/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a6ed1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a6ed1.dir/build.make CMakeFiles/cmTC_a6ed1.dir/build
+gmake[1]: Entering directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o
+/opt/cray/pe/craype/2.7.30/bin/cc   -v -o CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+Using built-in specs.
+COLLECT_GCC=gcc-12
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-suse-linux
+Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go,d --enable-offload-targets=nvptx-none, --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.3.0 (SUSE Linux) 
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_a6ed1.dir/'
+ /usr/lib64/gcc/x86_64-suse-linux/12/cc1 -quiet -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -D __CRAY_X86_64 -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a6ed1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=x86-64 -version -o /tmp/cc79u0hf.s
+GNU C17 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)
+	compiled by GNU C version 12.3.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include
+ /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include
+ /opt/cray/pe/dsmml/0.2.2/dsmml//include
+ /usr/lib64/gcc/x86_64-suse-linux/12/include
+ /usr/local/include
+ /usr/lib64/gcc/x86_64-suse-linux/12/include-fixed
+ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include
+ /usr/include
+End of search list.
+GNU C17 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)
+	compiled by GNU C version 12.3.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 00000000000000000000000000000000
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_a6ed1.dir/'
+ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/as -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include --64 -o CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o /tmp/cc79u0hf.s
+GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46
+COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
+LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_a6ed1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6ed1.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.30/bin/cc  -v CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o -o cmTC_a6ed1 
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+Using built-in specs.
+COLLECT_GCC=gcc-12
+COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-suse-linux
+Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go,d --enable-offload-targets=nvptx-none, --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.3.0 (SUSE Linux) 
+COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
+LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_a6ed1' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-dumpdir' 'cmTC_a6ed1.'
+ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cctXkIGu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a6ed1 /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib -L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o -Bdynamic --as-needed -lsci_gnu_123_mpi --no-as-needed --as-needed -lsci_gnu_123 --no-as-needed -ldl --as-needed -lmpi_gnu_123 --no-as-needed --as-needed -ldsmml --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_a6ed1' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-dumpdir' 'cmTC_a6ed1.'
+gmake[1]: Leaving directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include]
+    add: [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include]
+    add: [/opt/cray/pe/dsmml/0.2.2/dsmml//include]
+    add: [/usr/lib64/gcc/x86_64-suse-linux/12/include]
+    add: [/usr/local/include]
+    add: [/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed]
+    add: [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include] ==> [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include]
+  collapse include dir [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include] ==> [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include]
+  collapse include dir [/opt/cray/pe/dsmml/0.2.2/dsmml//include] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/include]
+  collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/12/include] ==> [/usr/lib64/gcc/x86_64-suse-linux/12/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed] ==> [/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed]
+  collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include] ==> [/usr/x86_64-suse-linux/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include;/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/usr/lib64/gcc/x86_64-suse-linux/12/include;/usr/local/include;/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed;/usr/x86_64-suse-linux/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a6ed1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a6ed1.dir/build.make CMakeFiles/cmTC_a6ed1.dir/build]
+  ignore line: [gmake[1]: Entering directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/cray/pe/craype/2.7.30/bin/cc   -v -o CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+  ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gcc-12]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go d --enable-offload-targets=nvptx-none  --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.3.0 (SUSE Linux) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_a6ed1.dir/']
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/cc1 -quiet -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -D __CRAY_X86_64 -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a6ed1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=x86-64 -version -o /tmp/cc79u0hf.s]
+  ignore line: [GNU C17 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.1.2  MPFR version 4.0.2-p6  MPC version 1.1.0  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include]
+  ignore line: [ /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include]
+  ignore line: [ /opt/cray/pe/dsmml/0.2.2/dsmml//include]
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/include-fixed]
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.1.2  MPFR version 4.0.2-p6  MPC version 1.1.0  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 00000000000000000000000000000000]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_a6ed1.dir/']
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/as -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include --64 -o CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o /tmp/cc79u0hf.s]
+  ignore line: [GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils]
+  ignore line: [ SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46]
+  ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-dumpdir' 'CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_a6ed1]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6ed1.dir/link.txt --verbose=1]
+  ignore line: [/opt/cray/pe/craype/2.7.30/bin/cc  -v CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o -o cmTC_a6ed1 ]
+  ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+  ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gcc-12]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go d --enable-offload-targets=nvptx-none  --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.3.0 (SUSE Linux) ]
+  ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_a6ed1' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-dumpdir' 'cmTC_a6ed1.']
+  link line: [ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cctXkIGu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a6ed1 /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib -L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o -Bdynamic --as-needed -lsci_gnu_123_mpi --no-as-needed --as-needed -lsci_gnu_123 --no-as-needed -ldl --as-needed -lmpi_gnu_123 --no-as-needed --as-needed -ldsmml --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cctXkIGu.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a6ed1] ==> ignore
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o]
+    arg [-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib] ==> dir [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib]
+    arg [-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib] ==> dir [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib]
+    arg [-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../..] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../..]
+    arg [CMakeFiles/cmTC_a6ed1.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_123_mpi] ==> lib [sci_gnu_123_mpi]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_123] ==> lib [sci_gnu_123]
+    arg [--no-as-needed] ==> ignore
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lmpi_gnu_123] ==> lib [mpi_gnu_123]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-ldsmml] ==> lib [dsmml]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmvec] ==> lib [mvec]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--no-as-needed] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/crtend.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/crtend.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o]
+  collapse obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib] ==> [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib]
+  collapse library dir [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib] ==> [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib]
+  collapse library dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/lib]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12] ==> [/usr/lib64/gcc/x86_64-suse-linux/12]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib] ==> [/usr/x86_64-suse-linux/lib]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../..] ==> [/usr/lib64]
+  implicit libs: [sci_gnu_123_mpi;sci_gnu_123;dl;mpi_gnu_123;dsmml;gfortran;quadmath;mvec;m;pthread;gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o;/usr/lib64/gcc/x86_64-suse-linux/12/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib;/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib;/opt/cray/pe/dsmml/0.2.2/dsmml/lib;/usr/lib64/gcc/x86_64-suse-linux/12;/usr/lib64;/lib64;/usr/x86_64-suse-linux/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a1656/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a1656.dir/build.make CMakeFiles/cmTC_a1656.dir/build
+gmake[1]: Entering directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o
+/opt/cray/pe/craype/2.7.30/bin/CC   -v -o CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+Using built-in specs.
+COLLECT_GCC=g++-12
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-suse-linux
+Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go,d --enable-offload-targets=nvptx-none, --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.3.0 (SUSE Linux) 
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_a1656.dir/'
+ /usr/lib64/gcc/x86_64-suse-linux/12/cc1plus -quiet -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -D_GNU_SOURCE -D __CRAY_X86_64 -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a1656.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=x86-64 -version -o /tmp/ccb0hgv3.s
+GNU C++17 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)
+	compiled by GNU C version 12.3.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include
+ /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include
+ /opt/cray/pe/dsmml/0.2.2/dsmml//include
+ /usr/include/c++/12
+ /usr/include/c++/12/x86_64-suse-linux
+ /usr/include/c++/12/backward
+ /usr/lib64/gcc/x86_64-suse-linux/12/include
+ /usr/local/include
+ /usr/lib64/gcc/x86_64-suse-linux/12/include-fixed
+ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include
+ /usr/include
+End of search list.
+GNU C++17 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)
+	compiled by GNU C version 12.3.0, GMP version 6.1.2, MPFR version 4.0.2-p6, MPC version 1.1.0, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 00000000000000000000000000000000
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_a1656.dir/'
+ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/as -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include --64 -o CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccb0hgv3.s
+GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46
+COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
+LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_a1656
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1656.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.30/bin/CC  -v CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a1656 
+No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+Load a valid targeting module or set CRAY_CPU_TARGET
+Using built-in specs.
+COLLECT_GCC=g++-12
+COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-suse-linux
+Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,obj-c++,ada,go,d --enable-offload-targets=nvptx-none, --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.3.0 (SUSE Linux) 
+COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/
+LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_a1656' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'cmTC_a1656.'
+ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0tdJ8P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a1656 /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib -L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o -Bdynamic --as-needed -lsci_gnu_123_mpi --no-as-needed --as-needed -lsci_gnu_123 --no-as-needed -ldl --as-needed -lmpi_gnu_123 --no-as-needed --as-needed -ldsmml --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_a1656' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'cmTC_a1656.'
+gmake[1]: Leaving directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include]
+    add: [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include]
+    add: [/opt/cray/pe/dsmml/0.2.2/dsmml//include]
+    add: [/usr/include/c++/12]
+    add: [/usr/include/c++/12/x86_64-suse-linux]
+    add: [/usr/include/c++/12/backward]
+    add: [/usr/lib64/gcc/x86_64-suse-linux/12/include]
+    add: [/usr/local/include]
+    add: [/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed]
+    add: [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include] ==> [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include]
+  collapse include dir [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include] ==> [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include]
+  collapse include dir [/opt/cray/pe/dsmml/0.2.2/dsmml//include] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/include]
+  collapse include dir [/usr/include/c++/12] ==> [/usr/include/c++/12]
+  collapse include dir [/usr/include/c++/12/x86_64-suse-linux] ==> [/usr/include/c++/12/x86_64-suse-linux]
+  collapse include dir [/usr/include/c++/12/backward] ==> [/usr/include/c++/12/backward]
+  collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/12/include] ==> [/usr/lib64/gcc/x86_64-suse-linux/12/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed] ==> [/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed]
+  collapse include dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include] ==> [/usr/x86_64-suse-linux/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include;/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/usr/include/c++/12;/usr/include/c++/12/x86_64-suse-linux;/usr/include/c++/12/backward;/usr/lib64/gcc/x86_64-suse-linux/12/include;/usr/local/include;/usr/lib64/gcc/x86_64-suse-linux/12/include-fixed;/usr/x86_64-suse-linux/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /global/homes/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a1656/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a1656.dir/build.make CMakeFiles/cmTC_a1656.dir/build]
+  ignore line: [gmake[1]: Entering directory '/global/u2/z/zhangtao/tmp/fortran-call-python/cffi/call_py_fort/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/cray/pe/craype/2.7.30/bin/CC   -v -o CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+  ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=g++-12]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go d --enable-offload-targets=nvptx-none  --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.3.0 (SUSE Linux) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_a1656.dir/']
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/cc1plus -quiet -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include -D_GNU_SOURCE -D __CRAY_X86_64 -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a1656.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=x86-64 -version -o /tmp/ccb0hgv3.s]
+  ignore line: [GNU C++17 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.1.2  MPFR version 4.0.2-p6  MPC version 1.1.0  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include]
+  ignore line: [ /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include]
+  ignore line: [ /opt/cray/pe/dsmml/0.2.2/dsmml//include]
+  ignore line: [ /usr/include/c++/12]
+  ignore line: [ /usr/include/c++/12/x86_64-suse-linux]
+  ignore line: [ /usr/include/c++/12/backward]
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/include-fixed]
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (SUSE Linux) version 12.3.0 (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.1.2  MPFR version 4.0.2-p6  MPC version 1.1.0  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 00000000000000000000000000000000]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_a1656.dir/']
+  ignore line: [ /usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/as -v -I /opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include -I /opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include -I /opt/cray/pe/dsmml/0.2.2/dsmml//include --64 -o CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccb0hgv3.s]
+  ignore line: [GNU assembler version 2.41.0 (x86_64-suse-linux) using BFD version (GNU Binutils]
+  ignore line: [ SUSE Linux Enterprise 15) 2.41.0.20230908-150100.7.46]
+  ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_a1656]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1656.dir/link.txt --verbose=1]
+  ignore line: [/opt/cray/pe/craype/2.7.30/bin/CC  -v CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a1656 ]
+  ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+  ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=g++-12]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c c++ objc fortran obj-c++ ada go d --enable-offload-targets=nvptx-none  --enable-offload-defaulted --without-cuda-driver --enable-checking=release --disable-werror --with-gxx-include-dir=/usr/include/c++/12 --enable-ssp --disable-libssp --disable-libvtv --enable-cet=auto --disable-libcc1 --disable-plugin --with-bugurl=https://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --with-slibdir=/lib64 --with-system-zlib --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-libphobos --enable-version-specific-runtime-libs --with-gcc-major-version-only --enable-linker-build-id --enable-linux-futex --enable-gnu-indirect-function --program-suffix=-12 --without-system-libunwind --enable-multilib --with-arch-32=x86-64 --with-tune=generic --enable-link-serialization --build=x86_64-suse-linux --host=x86_64-suse-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.3.0 (SUSE Linux) ]
+  ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/12/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-D' '__CRAY_X86_64' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_a1656' '-I' '/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/include' '-I' '/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/include' '-I' '/opt/cray/pe/dsmml/0.2.2/dsmml//include' '-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib' '-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib' '-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib' '-shared-libgcc' '-dumpdir' 'cmTC_a1656.']
+  link line: [ /usr/lib64/gcc/x86_64-suse-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0tdJ8P.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a1656 /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o -L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib -L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib -L/opt/cray/pe/dsmml/0.2.2/dsmml//lib -L/usr/lib64/gcc/x86_64-suse-linux/12 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/12/../../.. CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o -Bdynamic --as-needed -lsci_gnu_123_mpi --no-as-needed --as-needed -lsci_gnu_123 --no-as-needed -ldl --as-needed -lmpi_gnu_123 --no-as-needed --as-needed -ldsmml --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed --disable-new-dtags -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/12/crtend.o /usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/12/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc0tdJ8P.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a1656] ==> ignore
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o]
+    arg [-L/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib] ==> dir [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib]
+    arg [-L/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib] ==> dir [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib]
+    arg [-L/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib]
+    arg [-L/usr/lib64/gcc/x86_64-suse-linux/12/../../..] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../..]
+    arg [CMakeFiles/cmTC_a1656.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_123_mpi] ==> lib [sci_gnu_123_mpi]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_123] ==> lib [sci_gnu_123]
+    arg [--no-as-needed] ==> ignore
+    arg [-ldl] ==> lib [dl]
+    arg [--as-needed] ==> ignore
+    arg [-lmpi_gnu_123] ==> lib [mpi_gnu_123]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-ldsmml] ==> lib [dsmml]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmvec] ==> lib [mvec]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--no-as-needed] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/crtend.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/crtend.o]
+    arg [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o]
+  collapse obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib] ==> [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib]
+  collapse library dir [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib] ==> [/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib]
+  collapse library dir [/opt/cray/pe/dsmml/0.2.2/dsmml//lib] ==> [/opt/cray/pe/dsmml/0.2.2/dsmml/lib]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12] ==> [/usr/lib64/gcc/x86_64-suse-linux/12]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../../../x86_64-suse-linux/lib] ==> [/usr/x86_64-suse-linux/lib]
+  collapse library dir [/usr/lib64/gcc/x86_64-suse-linux/12/../../..] ==> [/usr/lib64]
+  implicit libs: [sci_gnu_123_mpi;sci_gnu_123;dl;mpi_gnu_123;dsmml;gfortran;quadmath;mvec;m;pthread;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-suse-linux/12/crtbegin.o;/usr/lib64/gcc/x86_64-suse-linux/12/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/opt/cray/pe/mpich/8.1.28/ofi/gnu/12.3/lib;/opt/cray/pe/libsci/23.12.5/GNU/12.3/x86_64/lib;/opt/cray/pe/dsmml/0.2.2/dsmml/lib;/usr/lib64/gcc/x86_64-suse-linux/12;/usr/lib64;/lib64;/usr/x86_64-suse-linux/lib]
+  implicit fwks: []
+
+
